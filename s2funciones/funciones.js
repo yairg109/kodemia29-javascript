@@ -27,20 +27,21 @@ console.log("------Bienvenido al nombre de tu mascota-------")
 function elNombredemiMascota(Especie){
     switch(Especie){
         case "gato":
-             console.log("tu gato deberà llamarse : Michiflais")
-            break;
+             return "tu gato deberà llamarse : Michiflais"
         case "perro":
-            console.log("Tu perro deberà llamarse : Milaneso")
-            break;
+            return "Tu perro deberà llamarse : Milaneso"
         case "ave":
-            console.log("Tu ave deberá llamarse : Piolín")
-            break;
+            return "Tu ave deberá llamarse : Piolín"
         default:
-            console.log("Por favor escribe el nombre de tu especie : especie no conocida")
-            break;
+            return "Por favor escribe el nombre de tu especie : especie no conocida"
     }
 }
-elNombredemiMascota("yair")
+
+let nombre = elNombredemiMascota("gato")
+let nombre1 = elNombredemiMascota("perro")
+let nombre2 = elNombredemiMascota("perro")
+let nombre3 = elNombredemiMascota("lagarto")
+console.log(nombre,nombre1,nombre3)
 
 //funcion de dados
 
