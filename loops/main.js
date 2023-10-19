@@ -40,30 +40,31 @@
 
 // // .split
 // // */
-function contadorPalabras(text) {
-  let nuevaPalabra = "";
-  espaciosBlancos = /[ ]+/g;
-  primerEspacio = /^ /;
-  ultimoEspacio = / $/;
-  text = text.replace(espaciosBlancos, " ");
-  text = text.replace(primerEspacio, " ");
-  text = text.replace(ultimoEspacio, " ");
-  nuevaPalabra = text.split();
-  contarPalabras = nuevaPalabra.length;
-  return nuevaPalabra;
-}
-function contadorPalbras(text,numeroPalabras) {
-  let palabrapar = "";
-  let palabranon = "";
-  for(i=0;i<=numeroPalabras;i++){
+// function contadorPalabras(text) {
+//   let nuevaPalabra = "";
+//   //EXPRESIONES REGULARES DE PATRONES DE BUSQUEDA
+//   primerEspacio = /^ /;
+//   ultimoEspacio = / $/;
+//   //Generamos la nueva palabra para quitar espacios
+//   text = text.replace(espaciosBlancos, " ");
+//   text = text.replace(primerEspacio, " ");
+//   text = text.replace(ultimoEspacio, " ");
+//   nuevaPalabra = text.split();
+//   //contarPalabras = nuevaPalabra.length;
+//   return nuevaPalabra;
+// }
+// function contadorPalbras(text) {
+//   let palabrapar = "";
+//   let palabranon = "";
+//   numeroPalabras = text.length;
+//   for(i=0;i<=numeroPalabras;i++){
 
-  }
-}
-let textos = "como estas";
-console.log(contadorPalabras(textos));
 
-let hola = "hola como";
-let nsplit = hola.split(" ");
-let nuemero = nsplit.length;
+//   }
+// }
+// let textos = "como estas";
+// console.log(contadorPalabras(textos));
 
-console.log(nuemero);
+// let hola = "hola como";
+// let nsplit = hola.split(" ");
+// let nuemero = nsplit.length;
