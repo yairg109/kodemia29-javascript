@@ -128,14 +128,62 @@ console.log(nombresmayornueve);
 function generacion(koders, generacion) {
   let cantidadKoders = 0;
 
-
   for (let i = 0; i < cantidadElementos; i++) {
     if (koders[i].generation == generacion) {
       cantidadKoders++;
     }
   }
-   return cantidadKoders>0 ? "hay: " +cantidadKoders+ " koders en la generacion "+ generacion  : "No existen Koeders en esa generacion"
+  return cantidadKoders > 0
+    ? "hay: " + cantidadKoders + " koders en la generacion " + generacion
+    : "No existen Koeders en esa generacion";
 }
 
 let estudiantes = generacion(koders, 12);
 console.log(estudiantes);
+
+//ARRRAYS
+let frutas = ["melon", "manzanas", "peras"];
+console.log(frutas.length);
+//Ingresar a los elementos
+console.log(frutas[1]);
+//Metodos
+//1. Mutar el contenido del array : PUSH para agregar
+//Se puede usar asi o como la parte de abajo
+let masFrutas = frutas.push("brocoli");
+
+frutas.push("uvas");
+//2. Eliminar el ultimo elemento del array
+let eliminar = frutas.pop();
+//Usar .splice() para eliminar un elemento específico (en este caso, el elemento "melon"):
+//const indiceMelon = frutas.indexOf("melon");
+//frutas.splice(indiceMelon, 1);
+//frutas.splice(1);
+// 2. Unshift
+//frutas.unshift("Carne")
+// 3. Borrar el elemento SHIFT
+frutas.shift("brocoli");
+
+console.log(frutas);
+
+let alumnos = ["yair", "maylove", "angelica"];
+
+//const saludar = (alumno) => console.log("Hola crack", alumno);
+/*function saludar(alumno){
+  console.log("Hola crack "+alumno)
+*///}
+const saludar2=(alumno)=>console.log("holis" + alumno)
+//muy parecido a for each de csharp
+for (let alumno of alumnos) {
+  saludar2(alumno);
+}
+/*
+for - recorre un bloque de código varias veces
+
+for/in - recorre las propiedades de un objeto
+
+for/of - recorre los valores de un objeto iterable
+
+while - recorre un bloque de código mientras se cumple una condición específica
+
+do/while - también recorre un bloque de código mientras se cumple una condición específica
+*/
