@@ -295,3 +295,4 @@ console.log(nacionalidad)
 //
 
 //EJERCICIO2 
+const listaPaises = ()
