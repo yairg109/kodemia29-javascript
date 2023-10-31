@@ -10,3 +10,16 @@ const getTotals = (numbersArray) => {
 
 let total = getTotals(numbers);
 console.log(total);
+
+// const numerosMenoresasiente = (lista) => {
+//    return lista.filter((x) => x < 7).reduce((acc, el) => acc + el, 0);
+// };
+const numerosMenoresasiente = (lista) =>
+  lista.filter((x) => x < 7).reduce((acc, el) => acc + el, 0);
+
+const nuevoNumeros = numbers
+  .filter((x) => x < 6)
+  .reduce((acc, el) => acc + el, 0);
+
+console.log(numerosMenoresasiente(numbers));
+console.log(nuevoNumeros);
