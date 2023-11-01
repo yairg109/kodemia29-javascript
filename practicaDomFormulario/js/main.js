@@ -1,7 +1,3 @@
-//Creacion de carta
-const userCard = ()=>{
-
-}
 
 //LA LISTA DE USUARIOS
 let usersList=[]
