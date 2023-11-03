@@ -11,9 +11,17 @@ const pasarInformacion= ()=>{
     let user = {name,email,foto,id}
     return user
 }
-let btnGuardar = document.getElementById("btn-guardar")  
+//METODO DE DOM PARA LA SELECCION DEL ELEMENTO EN HTML "GUARDAR"
+//getElementById("nombre") seleccion del elemento por ID
+
+
+let btnGuardar = document.getElementById("btn-guardar") 
+
+//ACTIVAR el elemento DOM 
 btnGuardar.addEventListener("click",()=>{
 
     usersList.push(pasarInformacion())
     console.log(usersList)
 })
+
+
