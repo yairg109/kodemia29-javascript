@@ -52,4 +52,35 @@ class Student2 {
 // )
 
 //Punto importante ---- Simpre definir el tipo de dato en especial array cen los parametros cuando creamos instalacias
-const Miguelito = new Student2("Miguel", 14,["Mate"]);
+const Miguelito = new Student2("Miguel", 14, ["Mate"]);
+
+//la formas mas correcta de crear
+class Estudiantes {
+  constructor({
+    name,
+    email,
+    username,
+    //es opcional cuando son undefiend
+    facebook = undefined,
+    twitter = undefined,
+    approvedCourses = [],
+    learningPaths = [],
+  }) {
+    (this.name = name),
+      (this.email = email),
+      (this.username = username),
+      (this.socialMedia = {
+        twitter,
+        facebook,
+      });
+    //es opcional cuando son undefiend
+    this.approvedCourses = approvedCourses;
+    this.learningPaths = learningPaths;
+  }
+}
+
+const yairs = new Student({
+  name: "yair109",
+  email : "ya",
+  username   : "yaya"
+});
